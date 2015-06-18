@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Meridium.ShareCountGadget</id>
+    <version>0.0.1</version>
+    <title>Meridium.ShareCountGadget</title>
+    <authors>Team Foxtrot @ Meridium AB</authors>
+    <owners>Team Foxtrot @ Meridium AB</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An EPiServer dashboard gadget with an overview of the your total share count</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <dependencies>
+      <dependency id="Meridium.ShareCountService" version="1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Meridium.ShareCountGadget/bin/Release/Meridium.ShareCountGadget.dll" target="lib\net45\" />
+    <file src="Meridium.ShareCountGadget/Views/ShareCount/Index.cshtml" target="Views\ShareCount\Index.cshtml" />
+  </files>
+</package>
+

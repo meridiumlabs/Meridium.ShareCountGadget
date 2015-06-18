@@ -1,0 +1,37 @@
+﻿
+@model List<Meridium.ShareCountGadget.ISocialMediaCounter>
+
+@{
+    Layout = null;
+}
+    <div role="grid" class="dgrid dgrid-grid ui-widget" id="grid">
+        <div role="row" class="dgrid-header dgrid-header-row ui-widget-header">
+            <table id="grid-header" role="presentation" class="dgrid-row-table">
+                <tr>
+                    <th role="columnheader" class="dgrid-cell dgrid-cell-padding dgrid-column-first field-first dgrid-sortable">Sidans namn</th>
+                    <th role="columnheader" class="dgrid-cell dgrid-cell-padding dgrid-column-last field-last dgrid-sortable">Totalt</th>
+                    <th role="columnheader" class="dgrid-cell dgrid-cell-padding dgrid-column-last field-last dgrid-sortable">Facebook</th>
+                    <th role="columnheader" class="dgrid-cell dgrid-cell-padding dgrid-column-age field-age dgrid-sortable">Twitter</th>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-top: 25px; margin-bottom: 0px;" tabindex="-1" class="dgrid-scroller shareCount">
+            <div class="dgrid-content ui-widget-content">
+                @{
+                    bool oddEven = true;
+                }
+                @foreach(var content in Model) {
+                <div id="grid-row-0" class="dgrid-row ui-state-default @((oddEven =! oddEven) ? " dgrid-row-even" : "dgrid-row-odd" )" role="row">
+                    <table role="presentation" class="dgrid-row-table">
+                        <tr>
+                            <td role="gridcell" class="dgrid-cell dgrid-cell-padding dgrid-column-first field-first">@content.Name</td>
+                            <td role="gridcell" class="dgrid-cell dgrid-cell-padding dgrid-column-last field-last" data-service="total">@content.TotalShareCount.TotalShareCount</td>
+                            <td role="gridcell" class="dgrid-cell dgrid-cell-padding dgrid-column-age field-age" data-service="facebook">@content.TotalShareCount.FacebookShareCount</td>
+                            <td role="gridcell" class="dgrid-cell dgrid-cell-padding dgrid-column-age field-age" data-service="facebook_share">@content.TotalShareCount.TwitterShareCount</td>
+                        </tr>
+                    </table>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
