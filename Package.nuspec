@@ -15,7 +15,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Meridium.ShareCountGadget/bin/Release/Meridium.ShareCountGadget.dll" target="lib\net45\" />
+    <file src="Meridium.ShareCountGadget/bin/Meridium.ShareCountGadget.dll" target="lib\net45\" />
     <file src="Meridium.ShareCountGadget/Views/ShareCount/Index.cshtml" target="Views\ShareCount\Index.cshtml" />
   </files>
 </package>
