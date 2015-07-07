@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Meridium.ShareCountGadget</id>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
     <title>Meridium.ShareCountGadget</title>
     <authors>Team Foxtrot @ Meridium AB</authors>
     <owners>Team Foxtrot @ Meridium AB</owners>
@@ -16,9 +16,9 @@
   </metadata>
   <files>
     <file src="Meridium.ShareCountGadget/bin/Meridium.ShareCountGadget.dll" target="lib\net45\" />
-    <file src="Meridium.ShareCountGadget/Views/ShareCount/Index.cshtml" target="modules/Meridium.ShareCountGadget/Views/ShareCount/Index.cshtml" />
-    <file src="Meridium.ShareCountGadget/Views/Web.Config" target="modules/Meridium.ShareCountGadget/Views/Web.Config" />
-    <file src="Meridium.ShareCountGadget/ShareCountReport.aspx" target="Reports/ShareCountReport.aspx" />
+    <file src="Meridium.ShareCountGadget/Views/ShareCount/Index.cshtml" target="content/modules/Meridium.ShareCountGadget/Views/ShareCount/Index.cshtml" />
+    <file src="Meridium.ShareCountGadget/Views/Web.Config" target="content/modules/Meridium.ShareCountGadget/Views/Web.Config" />
+    <file src="Meridium.ShareCountGadget/ShareCountReport.aspx" target="content/Reports/ShareCountReport.aspx" />
   </files>
 </package>
 
