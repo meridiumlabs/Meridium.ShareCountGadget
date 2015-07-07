@@ -27,7 +27,7 @@ namespace Meridium.ShareCountGadget.Controllers
             var pages = repository.GetItems(refs,
                 new LanguageSelector(ContentLanguage.PreferredCulture.TwoLetterISOLanguageName))
                 .OfType<ISocialMediaTrackable>()
-                .OrderBy(x => x.ShareCount.TotalShareCount)
+                .OrderByDescending(x => x.ShareCount.TotalShareCount)
                 .Take(10)
                 .ToList();
 
