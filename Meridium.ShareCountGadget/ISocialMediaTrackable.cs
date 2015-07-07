@@ -4,7 +4,7 @@ using Meridium.ShareCountGadget.Models;
 
 namespace Meridium.ShareCountGadget
 {
-    public interface IShareCount : IContent, IReadOnly<PageData>
+    public interface ISocialMediaTrackable : IContent, IReadOnly<PageData>
     {
         ShareCountBlock ShareCount { get; set; }
     }
